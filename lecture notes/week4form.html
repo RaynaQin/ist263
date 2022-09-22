@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form example</title>
+</head>
+<body>
+    <h1>Food Order form</h1>
+   <form method="post" action="">
+    <label for="fullname">Name:</label>
+    <input type="text" id="fullname" name="fullname"><br>
+    <label for="specialinstructions">special instructions:</label>
+    <textarea id="specialinstructions"name="specialinstructions"></textarea><br>
+    <label for="delivery">delivery</label>
+
+    <input type="radio" id="delivery" name="deliverypickup" value="delivery">
+    <label for="pickup">pickup</label>
+
+    <input type="radio" id="pickup" name="deliverypickup" value="pickup" checked><br>
+
+    <label for="plastic">do you need plastic utensills?</label>
+    <input type="checkbox" id="plastic" name="plasctic" value="yes"><br>
+
+    <label for="regin">What region?</label>
+    <select id="region" name="region">
+        <option></option> <!--打了这个没选项显示-->
+        <option value="westcott">Downtown</option>
+        <option value="downtown">Eastwood</option>
+        <option value="oak street">Oka street</option>
+
+
+    </select><br>
+    <input type="submit" value="send my form">
+
+
+   </form>
+</body>
+</html>
