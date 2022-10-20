@@ -1,0 +1,53 @@
+body{ background-color:#FFF5E4;
+    color: #000000;
+   
+}
+
+h1, h2{color:#FF9494
+}
+
+a{
+    color:#ABD9FF;
+  }
+
+  nav {
+    background-color:#AAC4FF;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+ nav a:hover{background-color:#D18CE0;}
+
+nav a {color:#FFFFFF}
+
+.quote {float:right;}
+
+.row1, .row2 {display: flex;
+  margin: 10px;
+  background-color:#FFFFFF; border-radius: 1em;
+  padding: 40px;}
+
+.row1 div, .row2 div {flex:1;
+ margin: 20px;}
+
+ iframe {padding-right: 100%;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
