@@ -1,0 +1,26 @@
+p {
+    color: #fce76e;
+    background-color:white
+
+}
+
+/* change the color of the visited link*/
+a:visited{
+    color:aquamarine;
+}
+
+a:hover{  /*鼠标在上面改颜色*/
+    color:blueviolet;
+}
+
+body{
+    background-color:pink;
+    background-image: url("../images/pumpkin.png");
+    background-repeat: no-repeat;
+
+}
+.second {
+    border: 2px solid #ff0000;
+    padding: 10px;
+    margin: 20px;
+}
