@@ -32,6 +32,9 @@ padding: 40px;}
   margin:20px;
 }
 
+.row1 div {
+  margin:5px;
+}
 
 .row1 div, .row2 div {flex: 1;}
 
