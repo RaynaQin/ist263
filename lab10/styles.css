@@ -28,7 +28,26 @@ nav a {color:#FFFFFF}
   background-color:#FFFFFF; border-radius: 1em;
 padding: 40px;}
 
+.row2 div{
+  margin:20px;
+}
+
+
 .row1 div, .row2 div {flex: 1;}
+
+.banner {
+  max-width: 100%;
+}
+
+.row2{
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 600px) {
+nav a {display: block; margin-bottom:10px; margin-top:10px;}
+nav span {display:none;}
+}
+
 
 
 
