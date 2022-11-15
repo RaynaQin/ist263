@@ -1,0 +1,43 @@
+
+
+body {background-image: url("../project/images/wallpaper.webp");
+    background-size: 100%;
+
+        }
+
+header {background-color: #800000;
+    color:#FCF6F5FF;
+font-size:x-large;
+padding:6px;
+font-family:Georgia, Times, 'Times New Roman', serif;}
+
+nav {background-color:#A78B71;
+    padding: 3px;
+    }
+footer {
+    background-color:#A78B71;
+    text-align: center;
+padding-bottom: 10px;}
+
+.sm {display:flex;
+    justify-content: center;
+;}
+.sm div {margin: 15px;}
+.copyright {margin-top: -10px; font-size: small;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-kerning: 15px;
+}
+
+
+nav a {margin-left: 60px;
+color:#000000;
+text-decoration:none;
+font-family:Georgia, Times, 'Times New Roman', serif;}
+
+h1, h2, hr, nav, header {text-align:center;}
+
+hr { 
+    color: #990011FF;}
+
+
+
