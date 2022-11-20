@@ -1,18 +1,25 @@
 
 
 body {background-image: url("../project/images/wallpaper.webp");
-    background-size: 100%;
+    background-size: 100%;}
 
-        }
+header, nav a {font-family:'Roboto', sans-serif;}
 
-header {background-color: #800000;
+h1, h2, .box {font-family: 'Amatic SC', cursive;}
+
+h1 {font-size: 3.5em;}
+h2 {font-size:2.5em;}
+.box {font-size:1.5em;}
+
+header {background-color: #526449;
     color:#FCF6F5FF;
 font-size:x-large;
 padding:6px;
-font-family:Georgia, Times, 'Times New Roman', serif;}
+}
 
 nav {background-color:#A78B71;
     padding: 3px;
+
     }
 footer {
     background-color:#A78B71;
@@ -29,15 +36,39 @@ padding-bottom: 10px;}
 }
 
 
-nav a {margin-left: 60px;
+nav a {margin:50px;
 color:#000000;
-text-decoration:none;
-font-family:Georgia, Times, 'Times New Roman', serif;}
+text-decoration:none;}
+
+nav a:hover {
+    color: #808080;
+  }
+
+@media only screen and (max-width: 600px) {
+    nav a {display: block; margin-bottom:10px; margin-top:10px; }
+    nav {border-bottom: #000000;}
+    }
 
 h1, h2, hr, nav, header {text-align:center;}
 
 hr { 
     color: #990011FF;}
+    
+ .skip {
+        background-color:#FFFFFF;
+        padding:5px;
+        border:1px solid #000000;
+        position:absolute;
+        left:-999px; 
+        margin-top:10px;
+      }
+      
+.skip:focus{
+        left:10px;
+      }
+
+
+      
 
 
 
