@@ -15,14 +15,11 @@ header {background-color: #526449;
     color:#FCF6F5FF;
 font-size:x-large;
 padding:6px;
-margin:0px;
 }
 
 nav {background-color:#A78B71;
-    padding: 3px;
-    margin:0px;
-
-    }
+    padding: 3px; }
+    
 footer {
     background-color:#A78B71;
     text-align: center;
