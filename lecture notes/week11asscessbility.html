@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .skip {
+            background-color:#ffa500;
+            padding:5px;
+            border:1px solid #000000;
+            position:absolute;
+            top:30px;
+            left:-999px; /* pushes it off screen*/
+        }
+        /* focus is a psuedo class that means the element has been tabbed to*/
+        .skip:focus{
+            left:10px;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="#content" class="skip" tabindex="1">Skip to Content</a><br>
+    <a href="http://www.syr.edu" tabindex="2">Syracuse</a><br>
+    <a href="http://www.amazon.com" tabindex="3">Amazon</a><br>
+    <a href="http;//www.google.com" tabindex="4">Google</a>
+    <p id="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quisquam earum repellat vero eius nulla tempore perspiciatis? Voluptatem alias deserunt laudantium, doloremque, necessitatibus voluptas id accusamus tempora magnam officiis debitis?</p>
+</body>
+</html>
