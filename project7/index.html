@@ -6,18 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marcus Music Museum</title>
     <link rel="stylesheet" href="project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Monoton&family=Poiret+One&display=swap" rel="stylesheet">
+
     <style>
-        .banner{width: 100%;
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                }
-        .homenav{background-color: transparent;
-                position: absolute;
-                display:block;
-                text-align:center;
-                margin-top: 10px;
-}
+        .intro {display: flex;
+            flex-wrap: wrap;
+        justify-content: center;}
+
+         .c1 {flex-basis: 25%; margin: 30px;
+                padding:50px; margin-top: 150px;}
+        
+        .c2{margin:30px;}
+
+        .c1 div {margin: 30px;}
+
+    .newrelease div{margin:30px;}
+    .newrelease {justify-content: space-around;}
+    
+    .p1,.p2 {display:flex; 
+    text-align: center;}
+
+
+     
+       img {max-width: 100%;}
+
+ 
+  
+        
+
+        
+
         
     </style>
 </head>
@@ -25,56 +47,81 @@
 <body>
     <header>
     Marcus Music Museum
+    <a href="#content" class="skip" tabindex="1">Skip to Content</a><br>
     </header>
-    <nav class="homenav">
-        <a href="index.html">Home</a>
+    <nav>
         <a href="collection.html">My Collection</a>
+        <a href="index.html">Home</a>
         <a href="video.html">Unboxing Video</a>
     </nav>
-    <img src="../project/images/banner.png" alt="banner" width="1400" height="350" class="banner">
 
-    <div>
-    <p> Hi, welcome to Marcus’s CDs and Vinyl Museum!
+    <div class="intro">
+        <div class="c1">
+        <div>
+        <p id="content"> Hi, welcome to Marcus’s CDs and Vinyl Museum!
         Here will be presented with all the albums I've collected so far.
         Hope you can feel the charm of physical albums here! </p>
-    
-    <audio controls>
-        <source src="../project/audio/03._Anti-Hero.m4a" type="audio/mpeg">
-    </audio>
-    
-    <img src="../project/images/homepagelovesimmon.png" alt="homepagelovesimmon" width="550" height="450"> 
-    <hr>
+        </div>
+
+        <div>
+         <audio controls>
+         <source src="../project/audio/03._Anti-Hero.m4a" type="audio/mpeg">
+         </audio>
+        </div>
+        </div>
+
+         <div class="c2">
+            <img src="../project/images/homepagelovesimmon.png" alt="homepagelovesimmon" width="600" height="450"> 
+        </div>
     </div>  
+    <hr>
 
     <section>
         <h1>New Releases</h1>
+        <div class="newrelease">
+            <div class="p1">
+                <div>
         <img src="../project/images/midightsblue.png" alt="midightsblue" width="300" height="300">
-        <p>Midnights: Blue Edition Vinyl  </p>
+        <div class="title">Midnights: Blue Edition Vinyl  </div>
+                </div>
+                <div>
         <img src="../project/images/midnightspurple.png" alt="midnightspurple" width="300" height="300">
-        <p>Midnights: Purple Edition Vinyl </p>
-
+        <div class="title">Midnights: Purple Edition Vinyl </div>
+                </div>
+             </div>
+        <div class="p2">
+    <div>
+        <a href="collectionpage.html">Explore Now!</a>
+    </div>
+    <div>
         <video width="270" height="480" controls>
             <source src="../project/videos/homepage.mp4" type="video/mp4">
-        </video>
-         
-        <a href="collectionpage.html">Explore Now!</a>
+        </video> 
+        <div class="title">Midnights: Purple Edition Vinyl <br>
+            Unboxing Video</div>
+    </div>
+        </div>
+    </div>
  
-
-
-
-
-
-
-    
-
     </section>
     
     <footer>
-        <a href="https://weibo.com/u/5975810780"><img src="../project/images/weibo.svg" alt="Weibo" width="40" height="40"></a>
-        <a href="https://instagram.com/_yongxu?igshid=YmMyMTA2M2Y="><img src="../project/images/instagram.svg" alt="instagram" width="40" height="40"></a>
-        <a href="mailto:yong13@berkeley.edu "><img src="../project/images/email.svg" alt="email" width="40" height="40"></a>
-        &#169; Marcus Xu & Rayna Qin
-    </footer>
+        <div class="sm">
+        <div>
+        <a href="https://weibo.com/u/5975810780"><img src="../project/images/weibo.svg" alt="Weibo" width="25" height="25"></a>
+         </div>
+        <div>
+        <a href="https://instagram.com/_yongxu?igshid=YmMyMTA2M2Y="><img src="../project/images/instagram.svg" alt="instagram" width="25" height="25"></a>
+        </div>
+         <div>
+        <a href="mailto:yong13@berkeley.edu "><img src="../project/images/email.svg" alt="email" width="25" height="25"></a>
+        </div>
+        </div>
+        <div class="copyright">
+            &#169; Marcus Xu & Rayna Qin
+        </div>
+
+</footer>
 
 
 

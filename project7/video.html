@@ -6,88 +6,224 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unboxing Video</title>
     <link rel="stylesheet" href="project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Monoton&family=Poiret+One&display=swap" rel="stylesheet">
+
+
+    <style>
+        .video {display: flex;
+            justify-content: space-around;
+            text-align: center;
+            flex-wrap: wrap;
+             margin-top:20px;
+            margin-bottom: 30px;}
+        .video div{margin:30px;}
+
+
+       .form {display:flex;
+            margin:10px;
+            border: 2px solid #000000; 
+            padding: 50px;
+        font-size: larger;
+        width: 400px;
+            height:550px;
+                margin-left:auto;
+            margin-right:auto;}
+
+        input[type=text], #nextvideo, #others {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border-radius: 4px;
+        box-sizing: border-box;
+        background-color:#A78B71;
+        border: none;
+        }
+
+        input[type=submit] {
+        width: 100%;
+        background-color:#465c3a;
+        color: #ffffff;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size:larger;
+        margin-top: 30px;
+        font-family: 'Amatic SC', cursive;
+        }
+
+        input[type=submit]:hover {
+        background-color: #526449;
+        }
+
+        .p1 {margin-bottom: 5px;}
+        .p2 span {margin-right: 20px; font-size:large;}
+     
+        
+        h2 {margin-top: 60px;}
+
+
+        input[type=text], #nextvideo, #others, input[type=submit]  {margin-bottom: 20px;}
+  
+        hr{margin-left: 30px; margin-right: 30px;}
+
+        @media only screen and (max-width: 600px) {
+            .form {margin-left: 10px; margin-right: 10px;  width: auto; height:auto;}
+            .p1{display: block;}}
+
+
+
+
+    </style>
 </head>
 <body>
     <header>
         Marcus Music Museum
+        <a href="#content" class="skip" tabindex="1">Skip to Content</a><br>
     </header>
     <nav>
-        <a href="index.html">Home</a> 
         <a href="collection.html">My Collection</a>
+        <a href="index.html">Home</a>
         <a href="video.html">Unboxing Video</a>
     </nav>
 
     <section>
-    <h1>Unboxing Videos</h1>
-    <video width="270" height="480" controls>
-        <source src="../project/videos/midnight.mp4" type="video/mp4">  
-    </video><br>
-    Taylor Swift<br>
-    Midnights: Purple Edition Vinyl<br>
+    <h1  id="content">Unboxing Videos</h1>
+    <div>
+        <div class="video">
+            <div>
+                 <video width="270" height="480" controls>
+                <source src="../project/videos/midnight.mp4" type="video/mp4">  
+                 </video><br>
+                 <div class="title"> Taylor Swift<br>
+                 Midnights: Purple Edition Vinyl<br> </div>
+            </div>
+            <div>
+                <video width="270" height="480" controls>
+               <source src="../project/videos/getbit.mp4" type="video/mp4">  
+               </video><br>
+               <div class="title"> All Things Blue<br>
+               Get Bit<br></div>
+               </div>
 
-    <video width="270" height="480" controls>
-        <source src="../project/videos/getbit.mp4" type="video/mp4">  
-    </video><br>
-    All Things Blue<br>
-    Get Bit<br>
+        </div>
 
-    <video width="270" height="480" controls>
+  
+
+        <div class="video">
+            <div>
+         <video width="270" height="480" controls>
         <source src="../project/videos/blackradio3.mp4" type="video/mp4">  
-    </video><br>
-    Robert Glasper<br>
-    Black Radio III<br>
+        </video><br>
+        <div class="title">Robert Glasper<br>
+         Black Radio III<br></div>
+        </div>  
 
-    <video width="270" height="480" controls>
+        <div>
+        <video width="270" height="480" controls>
         <source src="../project/videos/thepath.mp4" type="video/mp4">  
-    </video><br>
-    Marissa Nadler<br>
-    The Path of The Clouds<br>
+        </video><br>
+        <div class="title"> Marissa Nadler<br>
+        The Path of The Clouds<br></div>
+        </div>
 
-    <video width="270" height="480" controls>
+        <div>
+         <video width="270" height="480" controls>
         <source src="../project/videos/Visions.mp4" type="video/mp4">  
-    </video><br>
-    Grimes<br>
-    Visions
+         </video><br>
+         <div class="title">Grimes<br>
+        Visions</div>
+        </div>
+        </div>
+    </div>
 
     </section>
 
     <hr>
 <section>
+    
     <h2>What is the next unboxing video? <br>
         You decide! </h2>
+    <div class="form">
     <form action="https://formspree.io/f/xdojpyvv" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name"><br>
 
-        Favorite music type:
+        
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name"><br>
+         
+
+         
+            <div class="p1">
+        Favorite music type
+            </div>
+            <div class="p2">
+            <span>
         <input type="checkbox" id="musictype1" name="musictype1" value="Pop">
         <label for="musictype1">Pop</label>
+            </span>
+            <span>
         <input type="checkbox" id="musictype2" name="musictype2" value="Rock">
         <label for="musictype2">Rock</label>
+            </span>
+            <span>
         <input type="checkbox" id="musictype3" name="musictype3" value="R&B">
         <label for="musictype3">R&B</label>
+             </span>
+             <span>
         <input type="checkbox" id="musictype4" name="musictype4" value="Country">
         <label for="musictype4">Country</label>
+             </span>
+            </div>
+        
 
-        <label for="others">Others</label>
+        <br>
+        
+            <label for="others">Other music types</label>
         <textarea id="others" name="others"></textarea><br>
+       
+        
 
-        <label for="favoritesinger">Favorite singer:</label>
+       
+        <label for="favoritesinger">Favorite singer</label>
         <input type="text" id="favoritesinger" name="favoritesinger"><br>
+        
 
+       
         <label for="nextvideo">Next video should be…</label>
         <textarea id="nextvideo" name="nextvideo"></textarea><br>
+        
 
+        
         <input type="submit" value="submit">
+       
     </form>
+    </div>
+    
 </section>
 
-    <footer>
-        <a href="https://weibo.com/u/5975810780"><img src="../project/images/weibo.svg" alt="Weibo" width="40" height="40"></a>
-        <a href="https://instagram.com/_yongxu?igshid=YmMyMTA2M2Y="><img src="../project/images/instagram.svg" alt="instagram" width="40" height="40"></a>
-        <a href="mailto:yong13@berkeley.edu"><img src="../project/images/email.svg" alt="email" width="40" height="40"></a>
+<footer>
+    <div class="sm">
+    <div>
+    <a href="https://weibo.com/u/5975810780"><img src="../project/images/weibo.svg" alt="Weibo" width="30" height="30"></a>
+     </div>
+    <div>
+    <a href="https://instagram.com/_yongxu?igshid=YmMyMTA2M2Y="><img src="../project/images/instagram.svg" alt="instagram" width="30" height="30"></a>
+    </div>
+     <div>
+    <a href="mailto:yong13@berkeley.edu "><img src="../project/images/email.svg" alt="email" width="30" height="30"></a>
+    </div>
+    </div>
+    <div class="copyright">
         &#169; Marcus Xu & Rayna Qin
-    </footer>
+    </div>
+
+</footer>
 
 
 </body>

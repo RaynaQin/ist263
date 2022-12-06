@@ -1,57 +1,82 @@
-
-
 body {background-image: url("../project/images/wallpaper.webp");
     background-size: 100%;}
 
-header, nav a {font-family:'Roboto', sans-serif;}
+header {font-family: 'Cabin Sketch', cursive;
+} 
 
-h1, h2, .box {font-family: 'Amatic SC', cursive;}
+
+h1, h2 {font-family: 'Amatic SC', cursive;}
+
+.copyright {font-family: 'Cabin Sketch', cursive;
+    font-size: 1em;}
+
+nav {font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.3em;
+font-weight: bolder;}
+
+
+
+p, .collection div, .video div,.newrelease {font-family: 'Josefin Sans', sans-serif;
+}
+
+form {font-family: 'Josefin Sans', sans-serif;
+    font-size: large;
+font-weight: bolder ;}
+
+h1, h2, hr, nav, header, p, .newrelease {text-align:center;}
+
+
+
 
 h1 {font-size: 3.5em;}
 h2 {font-size:2.5em;}
-.box {font-size:1.5em;}
+
 
 header {background-color: #526449;
     color:#FCF6F5FF;
-font-size:x-large;
+font-size:xx-large;
 padding:6px;
 }
 
-nav {background-color:#A78B71;
-    padding: 3px; }
+nav {background-color:#A78B71; padding: 8px;}
     
 footer {
-    background-color:#A78B71;
+    background-color:#526449;
     text-align: center;
-padding-bottom: 10px;
-margin-top: 150px;}
+    padding-bottom: 10px;
+    margin-top: 150px;
+color: #FCF6F5FF;
+}
+
 
 .sm {display:flex;
     justify-content: center;
 ;}
 .sm div {margin: 15px;}
-.copyright {margin-top: -10px; font-size: small;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-kerning: 15px;
-}
+.copyright {margin-top: -10px;}
 
 
-nav a {margin:50px;
+
+
+nav a {margin: 50px;
 color:#000000;
-text-decoration:none;}
+text-decoration:none;
+}
 
 nav a:hover {
     color: #808080;
   }
 
-@media only screen and (max-width: 600px) {
+.title {font-size: larger; margin: 10px;}
+
+  @media only screen and (max-width: 600px) {
     nav a {display: block; padding:0px;margin: 10px; }
     a:hover {background-color: #ffffff; }}
 
-h1, h2, hr, nav, header {text-align:center;}
 
-hr { 
-    color: #990011FF;}
+
+
+
     
  .skip {
         background-color:#FFFFFF;
@@ -65,6 +90,7 @@ hr {
 .skip:focus{
         left:10px;
       }
+
 
 
       
