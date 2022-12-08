@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Monoton&family=Poiret+One&display=swap" rel="stylesheet">
 
     <style>
-        .intro {display: flex;
+        .intro, .newrelease{display: flex;
             flex-wrap: wrap;
         justify-content: center;}
 
@@ -24,32 +24,74 @@
 
         .c1 div {margin: 30px;}
 
-    .newrelease div{margin:30px;}
-    .newrelease {justify-content: space-around;}
+
+       .p1 {margin:60px;margin-top: 25px;}
+
+       .p2 {margin:60px;margin-top: 100px;}
+
+       .button {margin-top: 120px; width: 100%;}
+       .button a {text-decoration:none;
+                background-color:#465c3a;
+                color: #ffffff;
+                padding: 14px 100px;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+                font-size:xx-large;
+                font-family: 'Amatic SC', cursive;
+                }
+
+        .button a:hover{background-color: #526449;}
     
-    .p1,.p2 {display:flex; 
-    text-align: center;}
+    .row1 div, .row2 div,  div a {text-align: center;}
+
+    audio {color:#526449;}
+
+    hr {margin-left: 30px; margin-right: 30px;}
+
+    img {width: 100%;}
+
+    /*hambar*/
+    #hamicon {display: none;}
+
+    @media only screen and (max-width: 600px) 
+{ nav{display:none;}
+.hambar {display: flex; justify-content: center;}
+#hamicon{display: block;}
+.hamicon {flex-basis: 10%; margin-top: 11px;}
+.header {margin-left:60px; flex-basis: 90%;}
+
+}
 
 
-     
-       img {max-width: 100%;}
-
- 
-  
-        
-
-        
-
-        
     </style>
+
+<script>
+    function showNav () {
+        var x = document.getElementById("nav");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
 </head>
 
 <body>
     <header>
-    Marcus Music Museum
-    <a href="#content" class="skip" tabindex="1">Skip to Content</a><br>
+    <div class="hambar">
+        <div class="header">
+            Marcus Music Museum
+            <a href="#content" class="skip" tabindex="1">Skip to Content</a><br>
+        </div>
+        <div class="hamicon">
+         <img src="../project/images/hamburger.svg" id="hamicon" alt="hamburger menu" width="17" height="17" onclick="showNav();">
+        </div>
+    </div>
     </header>
-    <nav>
+    <nav id="nav">
         <a href="collection.html">My Collection</a>
         <a href="index.html">Home</a>
         <a href="video.html">Unboxing Video</a>
@@ -78,30 +120,45 @@
 
     <section>
         <h1>New Releases</h1>
-        <div class="newrelease">
+    <div class="newrelease">
+
+        <div class="row1">
+
             <div class="p1">
-                <div>
-        <img src="../project/images/midightsblue.png" alt="midightsblue" width="300" height="300">
-        <div class="title">Midnights: Blue Edition Vinyl  </div>
-                </div>
-                <div>
-        <img src="../project/images/midnightspurple.png" alt="midnightspurple" width="300" height="300">
-        <div class="title">Midnights: Purple Edition Vinyl </div>
-                </div>
+                <img src="../project/images/midightsblue.png" alt="midightsblue" width="375" height="375"><br>
+                <div class="title">Midnights: Blue Edition Vinyl</div>
+            </div>
+
+
+            <div class="p2">
+                <img src="../project/images/midnightspurple.png" alt="midnightspurple" width="375" height="375"><br>
+                <div class="title">Midnights: Purple Edition Vinyl</div>
+            </div>
+
+         </div>
+
+        <div class="row2">
+
+
+            <div class="p1">
+                <video width="324" height="576" controls><source src="../project/videos/homepage.mp4" type="video/mp4"></video><br>
+                <div class="title">Midnights Vinyl Unboxing</div>
+           </div>
+
+      
+
+            <div class="button">
+                <a href="collection.html">Explore Now!</a>
              </div>
-        <div class="p2">
-    <div>
-        <a href="collectionpage.html">Explore Now!</a>
-    </div>
-    <div>
-        <video width="270" height="480" controls>
-            <source src="../project/videos/homepage.mp4" type="video/mp4">
-        </video> 
-        <div class="title">Midnights: Purple Edition Vinyl <br>
-            Unboxing Video</div>
-    </div>
+
+
+
         </div>
+
     </div>
+    
+
+
  
     </section>
     

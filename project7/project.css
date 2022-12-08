@@ -11,19 +11,19 @@ h1, h2 {font-family: 'Amatic SC', cursive;}
     font-size: 1em;}
 
 nav {font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.3em;
+    font-size: 1em;
 font-weight: bolder;}
 
 
 
-p, .collection div, .video div,.newrelease {font-family: 'Josefin Sans', sans-serif;
+p, .collection div, .video div,.newrelease, .collection2 div{font-family: 'Josefin Sans', sans-serif;
 }
 
 form {font-family: 'Josefin Sans', sans-serif;
     font-size: large;
 font-weight: bolder ;}
 
-h1, h2, hr, nav, header, p, .newrelease {text-align:center;}
+h1, h2, hr, nav, header, p, .title {text-align:center;}
 
 
 
@@ -67,7 +67,7 @@ nav a:hover {
     color: #808080;
   }
 
-.title {font-size: larger; margin: 10px;}
+.title {font-size: larger;margin-top: 20px;}
 
   @media only screen and (max-width: 600px) {
     nav a {display: block; padding:0px;margin: 10px; }
@@ -90,6 +90,12 @@ nav a:hover {
 .skip:focus{
         left:10px;
       }
+
+@media only screen and (max-width: 600px) 
+{ nav{display:none;}
+.hamicon{display: inline;}
+
+}
 
 
 

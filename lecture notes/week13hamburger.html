@@ -23,10 +23,15 @@
     <style>
         #hamicon {display: none; width:50px;}
         #close {display: none; width:50px;}
-        #navlinks a{background-color: orange; margin:5px;}
+        #navlinks a{background-color: orange; margin:5px; }
         .myflexbox {display:flex;justify-content: space-around;}
+        #navlinks {display:none;}
+       
+        
         @media only screen and (max-width:800px) {
-            #hamicon {display:block;}
+            #hamicon, #navlinks {display:block;}
+        
+
             #close {display:block;}
             #navlinks a {display:block;} /*this will stack links since block is full width */
             #navlinks {display:none;}
@@ -53,10 +58,14 @@
 
 
     <div id="navlinks">
-        <a href="index.html">Home</a>
-        <a href="skill.html">Skills</a>
+        <a href="index.html">Home</a><hr>
+        <a href="skill.html">Skills</a><hr>
         <a href="contact.html">Contact</a>
     </div>
+
+   
+
     
 </body>
 </html>
+

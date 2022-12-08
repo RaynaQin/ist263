@@ -19,9 +19,20 @@
         justify-content: space-around;
     text-align: center;
     flex-wrap: wrap;
-    margin-top:20px;}
+    margin-top:20px;
+margin: 30px;}
 
-    .collection div{margin:30px;}
+    .collection div, .collection2 div {margin:30px;}
+  
+    .name {margin-top: 60px;}
+
+    .lastrow {display: flex; justify-content: space-around; flex-wrap: wrap; margin-top:50px;}
+
+    .collection2 { 
+    text-align: center;
+    margin-top:30px;}
+  
+
 
      .mainbox{margin-left: 30px;
     margin-right:30px;}
@@ -50,8 +61,8 @@
         <h1 id="content">My Collection</h1>
         <div class="mainbox">
           
-            <h2>Taylor Swift</h2>
-            <hr>
+            <div class="name"><h2>Taylor Swift</h2>
+                <hr></div>
             
             <div class="collection">
                     <div>
@@ -121,8 +132,8 @@
     
             
                 
-                    <h2>Lana Del Ray</h2>
-                <hr>
+                    <div class="name"><h2>Lana Del Ray</h2>
+                <hr></div>
                 <div class="collection">
                     <div>
                     <img src="../project/images/borntodie.png" alt="born to die cd" width="375" height="250"><br>
@@ -140,7 +151,7 @@
     
     
             
-                <h2>Arianna Grande</h2>
+                <div class="name"><h2>Arianna Grande</h2></div>
                 <hr>
                 
                 <div class="collection">
@@ -153,36 +164,57 @@
                     <img src="../project/images/myeverything.png" alt="my everything cd" width="300" height="300"><br>
                     <div class="title">My Everything</div>
                     </div>
+
                 </div>
     
             
                 
-                    <div class="collection">
+                <div class="lastrow">
+
                     <div>
-                    <h2>Billie Eilish </h2>
-                    <hr>
-                    <img src="../project/images/happierthanever.png" alt="happier than ever cd" width="300" height="400"><br>
-                    <div class="title">Happier Than Ever</div>
+                        <div class="name">
+                        <h2>Billie Eilish </h2>
+                        <hr>
+                        </div>
+
+                        <div class="collection2">
+                            <div>
+                                <img src="../project/images/happierthanever.png" alt="happier than ever cd" width="300" height="400"><br>
+                                <div class="title">Happier Than Ever</div>
+                             </div>
+                         </div>
                     </div>
                     
                    
                     <div>
-                    <h2>
-                        Camile Cabello
-                    </h2>
-                    <hr>
-                    <img src="../project/images/camile.png" alt="havana cd in different version" width="400" height="300"><br>
-                    <div class="title">Havana</div>
+                        <div class="name">
+                        <h2>Camile Cabello</h2>
+                        <hr>
+                        </div>
+
+                        <div class="collection2">
+                            <div>
+                            <img src="../project/images/camile.png" alt="havana cd in different version" width="400" height="300"><br>
+                             <div class="title">Havana</div>
+                            </div>
+                        </div>
                     </div>
     
+                    
                     <div>
-    
-                    <h2>Charli XCX</h2>
-                    <hr>
-                <img src="../project/images/crash.png" alt="crash cd" width="300" height="300"><br>
-                <div class="title">Crash</div>
+                        <div class="name">
+                        <h2>Charli XCX</h2>
+                        <hr>
+                        </div>
+                        <div class="collection2">
+                            <div>
+                            <img src="../project/images/crash.png" alt="crash cd" width="300" height="300"><br>
+                            <div class="title">Crash</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                
                 
                     
                 
