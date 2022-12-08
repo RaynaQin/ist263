@@ -75,22 +75,27 @@
         @media only screen and (max-width: 600px) {
             .form {margin-left: 10px; margin-right: 10px;  width: auto; height:auto; }
             .p1{display: block;}}
-
-
-
-
     </style>
+    <script src="project.js"></script>
 </head>
 <body>
     <header>
-        Marcus Music Museum
-        <a href="#content" class="skip" tabindex="1">Skip to Content</a><br>
+        <span class="header">
+            Marcus Music Museum
+            <a href="#content" class="skip" tabindex="1">Skip to Content</a>
+        </span>
+       
+        <span class="hamicon">
+         <img src="../project/images/hamburger.svg" id="hamicon" alt="hamburger menu" width="17" height="17" onclick="showNav();">
+        </span>
+   
     </header>
-    <nav>
+    <nav id="nav">
         <a href="collection.html">My Collection</a>
         <a href="index.html">Home</a>
         <a href="video.html">Unboxing Video</a>
     </nav>
+
 
     <section>
     <h1  id="content">Unboxing Videos</h1>

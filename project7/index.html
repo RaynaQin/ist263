@@ -56,40 +56,31 @@
 
     @media only screen and (max-width: 600px) 
 { nav{display:none;}
-.hambar {display: flex; justify-content: center;}
-#hamicon{display: block;}
-.hamicon {flex-basis: 10%; margin-top: 11px;}
-.header {margin-left:60px; flex-basis: 90%;}
+#hamicon{display:inline;}
+.hamicon {float: right;}
+.header {margin-left: 50px;}
 
 }
 
+</style>
 
-    </style>
+<script src="project.js"></script>
 
-<script>
-    function showNav () {
-        var x = document.getElementById("nav");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-</script>
+
 
 </head>
 
 <body>
     <header>
-    <div class="hambar">
-        <div class="header">
+        <span class="header">
             Marcus Music Museum
-            <a href="#content" class="skip" tabindex="1">Skip to Content</a><br>
-        </div>
-        <div class="hamicon">
+            <a href="#content" class="skip" tabindex="1">Skip to Content</a>
+        </span>
+       
+        <span class="hamicon">
          <img src="../project/images/hamburger.svg" id="hamicon" alt="hamburger menu" width="17" height="17" onclick="showNav();">
-        </div>
-    </div>
+        </span>
+   
     </header>
     <nav id="nav">
         <a href="collection.html">My Collection</a>

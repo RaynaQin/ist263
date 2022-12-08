@@ -68,16 +68,7 @@ nav a:hover {
   }
 
 .title {font-size: larger;margin-top: 20px;}
-
-  @media only screen and (max-width: 600px) {
-    nav a {display: block; padding:0px;margin: 10px; }
-    a:hover {background-color: #ffffff; }}
-
-
-
-
-
-    
+ 
  .skip {
         background-color:#FFFFFF;
         padding:5px;
@@ -91,11 +82,22 @@ nav a:hover {
         left:10px;
       }
 
-@media only screen and (max-width: 600px) 
+    /*hambar*/
+#hamicon {display: none;}
+
+    @media only screen and (max-width: 600px) 
 { nav{display:none;}
-.hamicon{display: inline;}
+#hamicon{display:inline;}
+.hamicon {float: right; margin-right: 5px; cursor: pointer;}
+.header {margin-left: 50px;}
+
+nav a {display: block; margin:0px; padding: 16px 16px; }
+a:hover {background-color: #ffffff; }
 
 }
+
+
+
 
 
 
