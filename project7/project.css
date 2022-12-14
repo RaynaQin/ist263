@@ -89,7 +89,7 @@ nav a:hover {
 { nav{display:none;}
 #hamicon{display:inline;}
 .hamicon {float: right; margin-right: 5px; cursor: pointer;}
-.header {margin-left: 50px;}
+.header {margin-left: 50px; font-size: x-large;}
 
 nav a {display: block; margin:0px; padding: 16px 16px; }
 a:hover {background-color: #ffffff; }
