@@ -85,6 +85,11 @@ nav a:hover {
     /*hambar*/
 #hamicon {display: none;}
 
+  
+
+
+
+
     @media only screen and (max-width: 600px) 
 { nav{display:none;}
 #hamicon{display:inline;}
